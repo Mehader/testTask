@@ -1,0 +1,32 @@
+.boxPost {
+  height: 90vh;
+}
+
+.headerText {
+  height: 36px;
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid #ced4da;
+}
+
+.descrText {
+  height: auto;
+  min-height: 80px;
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid #ced4da;
+}
+
+.boxImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+
+.boxImg > img {
+  width: auto;
+  height: 100%;
+  border: 1px solid #ced4da;
+}

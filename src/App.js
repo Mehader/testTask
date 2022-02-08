@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import {Col, Container, Row} from "react-bootstrap";
+import SettingsPost from "./Components/SettingsPost/SettingsPost";
+import Post from "./Components/Post/Post";
+import {useSetSettings} from "./hooks";
+import style from "./App.module.css"
 
 function App() {
+
+  useSetSettings()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className={style.container}>
+      <Row>
+        <h1 className={style.title}>Settings</h1>
+      </Row>
+      <Row>
+        <Col>
+          <SettingsPost/>
+        </Col>
+        <Col>
+          <Post/>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

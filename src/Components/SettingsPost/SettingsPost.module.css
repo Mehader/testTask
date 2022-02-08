@@ -1,0 +1,54 @@
+.input {
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.textArea {
+  margin-bottom: 20px;
+}
+
+.uploadImageDrop {
+  height: auto;
+  min-height: 80px;
+  width: 100%;
+  padding: 6px 4px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5c5c5;
+  border: 3px dashed #a4a4a4;
+  border-radius: 5px;
+}
+
+.uploadImageDrag {
+  height: auto;
+  min-height: 80px;
+  width: 100%;
+  padding: 6px 4px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c4c4c4;
+  border: 3px dashed #344e64;
+  border-radius: 5px;
+}
+
+.btn {
+  margin: 10px 0px;
+}
+
+.saveLabel {
+  position: absolute;
+  padding: 20px 35px;
+  background-color: #9dcbff;
+  top: 50px;
+  right: 0;
+  text-transform: uppercase;
+}
+
+
