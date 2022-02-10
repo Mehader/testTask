@@ -24,60 +24,30 @@ const settingsReducer = (state = initialState, action) => {
       return {
         ...state,
         headerCheck: !state.headerCheck,
-        imageCheck: state.imageCheck,
-        valueTitle: state.valueTitle,
-        valuePostText: state.valuePostText,
-        valueHeader: state.valueHeader,
-        imgPath: state.imgPath,
       };
     case IMAGE_CHECK:
       return {
         ...state,
-        headerCheck: state.headerCheck,
         imageCheck: !state.imageCheck,
-        valueTitle: state.valueTitle,
-        valuePostText: state.valuePostText,
-        valueHeader: state.valueHeader,
-        imgPath: state.imgPath,
       };
     case VALUE_TITLE:
       return {
         ...state,
-        headerCheck: state.headerCheck,
-        imageCheck: state.imageCheck,
         valueTitle: action.payload,
-        valuePostText: state.valuePostText,
-        valueHeader: state.valueHeader,
-        imgPath: state.imgPath,
       };
     case VALUE_POST_TEXT:
       return {
         ...state,
-        headerCheck: state.headerCheck,
-        imageCheck: state.imageCheck,
-        valueTitle: state.valueTitle,
         valuePostText: action.payload,
-        valueHeader: state.valueHeader,
-        imgPath: state.imgPath,
       };
     case VALUE_HEADER:
       return {
         ...state,
-        headerCheck: state.headerCheck,
-        imageCheck: state.imageCheck,
-        valueTitle: state.valueTitle,
-        valuePostText: state.valuePostText,
         valueHeader: action.payload,
-        imgPath: state.imgPath,
       };
     case IMG_PATH:
       return {
         ...state,
-        headerCheck: state.headerCheck,
-        imageCheck: state.imageCheck,
-        valueTitle: state.valueTitle,
-        valuePostText: state.valuePostText,
-        valueHeader: state.valueHeader,
         imgPath: action.payload,
       };
     case ALL_SETTINGS:
